@@ -15,16 +15,18 @@ const Footer = () => (
         <p className="text-white text-base text-center mx-2 cursor-pointer">Wallets</p>
       </div>
     </div>
-
+{/* 
     <div className="flex justify-center items-center flex-col mt-5">
       <p className="text-white text-sm text-center">Come join us and hear for the unexpected miracle</p>
       <p className="text-white text-sm text-center font-medium mt-2">info@kryptomastery.com</p>
-    </div>
+    </div> */}
 
     <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
 
     <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-      <p className="text-white text-left text-xs">@kryptomastery2022</p>
+      <p className="text-white text-left text-xs">블랙키위(주)  |  사업자등록번호: 620-88-01626  |  통신판매업신고번호: 2020-수원영통-2027
+대표: 권기웅, 나영균  |  주소: 서울특별시 강남구 강남대로 364, 13층 1312호 (패스트파이브 강남 2호점) </p>
+      <p className="text-white text-left text-xs">Copyright 2022. mandu0505. </p>
       <p className="text-white text-right text-xs">All rights reserved</p>
     </div>
   </div>
