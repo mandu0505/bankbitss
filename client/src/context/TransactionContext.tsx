@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { contractABI, contractAddress } from "../utils/constants";
 
-export const TransactionContext = React.createContext("");
+export const TransactionContext:any = React.createContext("");
 
-const { ethereum } = window;
+const { ethereum }:any = window;
 
 const createEthereumContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum);
@@ -14,14 +14,14 @@ const createEthereumContract = () => {
   return transactionsContract;
 };
 
-export const TransactionsProvider = ({ children }) => {
+export const TransactionsProvider = ({ children }:any) => {
   const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
   const [currentAccount, setCurrentAccount] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [transactionCount, setTransactionCount] = useState(localStorage.getItem("transactionCount"));
   const [transactions, setTransactions] = useState([]);
 
-  const handleChange = (e, name) => {
+  const handleChange = (e: { target: { value: any; }; }, name: any) => {
     setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
   };
 
@@ -32,7 +32,7 @@ export const TransactionsProvider = ({ children }) => {
 
         const availableTransactions = await transactionsContract.getAllTransactions();
 
-        const structuredTransactions = availableTransactions.map((transaction) => ({
+        const structuredTransactions = availableTransactions.map((transaction: { receiver: any; sender: any; timestamp: { toNumber: () => number; }; message: any; keyword: any; amount: { _hex: string; }; }) => ({
           addressTo: transaction.receiver,
           addressFrom: transaction.sender,
           timestamp: new Date(transaction.timestamp.toNumber() * 1000).toLocaleString(),
