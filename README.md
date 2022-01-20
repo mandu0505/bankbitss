@@ -1,3 +1,3 @@
 # bankbitss.com
 
-[bankbitss.com](https://bankbitss.com) Blockchain App, Crypto Wallet
+[bankbitss.com](http://www.bankbitss.com/) Blockchain App, Crypto Wallet
