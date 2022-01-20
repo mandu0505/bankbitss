@@ -1,0 +1,24 @@
+{
+  "name": "bankbitss.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\"",
+    "build": "concurrently \"cd client && npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandu0505/bankbitss.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandu0505/bankbitss.com/issues"
+  },
+  "homepage": "https://github.com/mandu0505/bankbitss.com#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
