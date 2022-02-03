@@ -16,6 +16,6 @@ Access Ethereum wallet metamask through a browser extension or mobile app, and y
 
 # 🤔 Learned
 
-- It was possible to study the blockchain network using **Solidity** and Metamask.
-- I could study about how to deal with css libraries such as **Tailwind CSS**.
-- I used 'hosting' service of 'Hostinger' and was able to proceed with project deployment.
+- Studied the blockchain network using `Solidity` and Metamask.
+- Could study how to deal with css libraries such as `Tailwind CSS`.
+- Used `hosting` service of `Hostinger` and was able to proceed with project deployment.
